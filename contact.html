@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
+    <title>
+        Rat Studios
+    </title>
+    <header style="color: red;">
+        Rat Studios -----
+    </header>
+    <br>
+    <div class="topnav">
+        <a class="#home" href="index.html"> Home</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+    <h1 class="hs">
+        Contact Us! 
+    </h1>
+    <br>
+        <div class="form">
+            First Name:<br>     <input type="text" id="FirstName" name="FirstName"> <br>
+            Last Name:<br>     <input type="text" id="LastName"> <br>
+            Phone Number:<br>     <input type="text" id="PhoneNumber"> <br>
+            Email Address:<br>    <input type="text" id="Email"> <br> <br>
+            Give us a brief description! <br>
+            <textarea id="Submission" name="submission" rows="10" cols="100">
+            </textarea>
+            <br>
+            <input type="button" value="Submit" onclick="UpdatePage()">
+        </div>
+    <script>
+        function UpdatePage()
+        {
+            var firstname = document.getElementById("FirstName").value;
+            alert("Thank you, " + firstname + "! We will get back to you as soon as possible!");
+
+            document.getElementById("FirstName").value = "";
+            document.getElementById("LastName").value = "";
+            document.getElementById("PhoneNumber").value = "";
+            document.getElementById("Email").value = "";
+            document.getElementById("Submission").value = "";
+            
+
+        }
+    </script>
+
+    <div class="footer">
+        <span>Lucas Posey | lucas.posey@ndsu.edu | 701-808-8080 | ratslayer1231@ratstudios.com</span>
+    </div> 
+</html>
